@@ -1,0 +1,35 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# requirements.txt
+# SaaS MRR Decomposition & LTV Forecast Dashboard
+# ─────────────────────────────────────────────────────────────────────────────
+# Install with:
+#   pip install -r requirements.txt
+#
+# Python >= 3.9 required  (tested on 3.11.9)
+# SQLite is bundled with Python — no extra install needed.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Web / Dashboard ───────────────────────────────────────────────────────────
+streamlit>=1.37.0            # Theme toggle requires st.query_params (1.37+)
+
+# ── Data & Analytics ──────────────────────────────────────────────────────────
+pandas>=2.0.0                # DataFrame operations, pivot_table, groupby
+numpy>=1.24.0                # Array math, RNG, polyfit for forecast
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+plotly>=5.18.0               # Interactive charts (bar, line, area, heatmap)
+
+# ── Scientific / Stats ────────────────────────────────────────────────────────
+scipy>=1.10.0                # Available for extended LTV modelling (optional)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Exact versions used during development (Windows, Python 3.11.9):
+#   streamlit == 1.63.0
+#   pandas    == 3.0.5
+#   numpy     == 1.26.4
+#   plotly    == 7.1.0
+#   scipy     == 1.17.1
+#
+# To pin exactly, run:
+#   pip freeze | findstr /i "streamlit pandas numpy plotly scipy"
+# ─────────────────────────────────────────────────────────────────────────────
