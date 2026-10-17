@@ -1,0 +1,8 @@
+[server]
+headless = true
+port = 8501
+
+[theme]
+# No base forced here — the app itself manages light/dark dynamically.
+# Streamlit default is "light"; the sidebar toggle overrides via CSS + Plotly templates.
+font = "sans serif"
